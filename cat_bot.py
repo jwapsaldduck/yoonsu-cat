@@ -30,7 +30,7 @@ def make_message(g):
 def send_discord(text):
     r = requests.post(
         WEBHOOK_URL,
-        json={"content": text, "username": "우는 고양이 😿"},
+        json={"content": text, "username": "윤수가 이리하면 우는 고양이 😿"},
     )
     print("디스코드 전송 결과:", r.status_code)
     return r.status_code in (200, 204)
